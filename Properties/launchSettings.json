@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "k8sFormWorkerApp": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
