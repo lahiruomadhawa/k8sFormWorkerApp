@@ -20,7 +20,7 @@ namespace k8sFormWorkerApp.Service
             _logger = logger;
             _redis = redis;
             _database = _redis.GetDatabase();
-            _postgresConnectionString = configuration.GetConnectionString("Postgres") ?? throw new ArgumentNullException("Postgres connection string is required.");
+            _postgresConnectionString = configuration.GetConnectionString("PostgreSQL") ?? throw new ArgumentNullException("Postgres connection string is required.");
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
